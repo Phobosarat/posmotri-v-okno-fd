@@ -7,7 +7,23 @@
 html {
   block-size: 100%;
 }
-
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
 .page {
   display: flex;
   justify-content: center;
@@ -68,9 +84,9 @@ html {
 }
 .search-form__textfield {
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  background-color: #1b1919;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
   appearance: none;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -117,7 +133,7 @@ html {
 }
 .button {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -256,25 +272,6 @@ html {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 /* Кастомный скроллбар */
